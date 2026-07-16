@@ -1311,6 +1311,22 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .section--center .section__kicker::before { display: none; }
 
 /* ----------------------------------------------------------------
+   SPOTIFY EMBEDS  (music page — artist profile + album)
+   ---------------------------------------------------------------- */
+.spotify__grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.8rem;
+  grid-template-columns: 1fr;
+}
+.spotify__embed iframe {
+  display: block;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+}
+
+/* ----------------------------------------------------------------
    RESPONSIVE — multi-page components
    ---------------------------------------------------------------- */
 @media (min-width: 640px) {
@@ -1324,4 +1340,5 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .process { grid-template-columns: repeat(4, 1fr); }
   .split { grid-template-columns: 3fr 2fr; gap: 4.5rem; }
   .split--media-right .split__media { order: 2; }
+  .spotify__grid { grid-template-columns: 1fr 1fr; }
 }

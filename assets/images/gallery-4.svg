@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <!-- PLACEHOLDER gallery image 4 — replace with a real photo (gallery-4.jpg) -->
+  <rect width="600" height="600" fill="#1e1b20"/>
+  <rect x="20" y="20" width="560" height="560" fill="none" stroke="#2c282f" stroke-width="2" stroke-dasharray="10 8"/>
+  <g fill="#9E1B32" opacity="0.5">
+    <rect x="250" y="270" width="14" height="60"/>
+    <rect x="278" y="250" width="14" height="80"/>
+    <rect x="306" y="285" width="14" height="45"/>
+    <rect x="334" y="260" width="14" height="70"/>
+  </g>
+  <text x="300" y="400" font-family="Arial, sans-serif" font-size="24" fill="#a89fab" text-anchor="middle">Portrets — vietturis</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Simple "R" monogram favicon in Latvian maroon -->
+  <rect width="64" height="64" rx="12" fill="#9E1B32"/>
+  <text x="32" y="46" font-family="Arial Black, Arial, sans-serif" font-size="40" font-weight="900" fill="#ffffff" text-anchor="middle">R</text>
+</svg>

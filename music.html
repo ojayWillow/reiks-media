@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reiks mūzika un portfolio — izceltās dziesmas, diskogrāfija, sadarbības un producētie darbi. Klausies un rezervē.">
+  <title>Mūzika & Portfolio — REIKS</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="canonical" href="https://reiks.lv/music">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="REIKS">
+  <meta property="og:locale" content="lv_LV">
+  <meta property="og:url" content="https://reiks.lv/music">
+  <meta property="og:title" content="Mūzika & Portfolio — REIKS">
+  <meta property="og:description" content="Izceltās dziesmas, diskogrāfija un sadarbības — klausies Reiks mūziku.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Galvenā navigācija">
+      <a href="/" class="nav__logo">REIKS<span class="nav__logo-dot">.</span></a>
+      <button class="nav__toggle" aria-label="Atvērt izvēlni" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="/" class="nav__link">Sākums</a></li>
+        <li><a href="/about" class="nav__link">Par mani</a></li>
+        <li><a href="/music" class="nav__link nav__link--active">Mūzika</a></li>
+        <li><a href="/services" class="nav__link">Pakalpojumi</a></li>
+        <li><a href="/services#kontakti" class="nav__link nav__link--cta">Sazināties</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+      <div class="container">
+        <p class="page-banner__kicker">Mūzika & Portfolio</p>
+        <h1 class="page-banner__title">Dzirdi to pats</h1>
+        <p class="page-banner__lead">Izceltās dziesmas, diskogrāfija un sadarbības — no patriotiskām himnām līdz kluba bītiem.</p>
+        <p class="page-banner__path"><a href="/">Sākums</a> / Mūzika</p>
+      </div>
+    </section>
+
+    <!-- FEATURED TRACKS -->
+    <section class="section music">
+      <span class="section__ghost" aria-hidden="true">01</span>
+      <div class="container">
+        <p class="section__kicker reveal">Klausies</p>
+        <h2 class="section__title reveal">Izceltās <span class="accent">dziesmas</span></h2>
+        <p class="section__lead reveal">
+          Ievieto īstos YouTube vai Spotify embed kodus katras kartes vietā — skatīt komentārus HTML failā.
+        </p>
+
+        <div class="music__grid">
+          <article class="track-card glow-card reveal">
+            <div class="track-card__embed">
+              <!-- EMBED PLACEHOLDER — replace this div with a real embed, e.g.:
+                   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID"
+                           title="Reiks — Latvija" frameborder="0" allowfullscreen></iframe>
+                   or Spotify:
+                   <iframe src="https://open.spotify.com/embed/track/TRACK_ID"
+                           width="100%" height="100%" frameborder="0"
+                           allow="encrypted-media" loading="lazy"></iframe> -->
+              <div class="track-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="track-card__body">
+              <h3 class="track-card__title">Latvija</h3>
+              <p class="track-card__text">Patriotiska himna — aicinājums atgriezties mājās.</p>
+            </div>
+          </article>
+
+          <article class="track-card glow-card reveal">
+            <div class="track-card__embed">
+              <div class="track-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="track-card__body">
+              <h3 class="track-card__title">Vēlos</h3>
+              <p class="track-card__text">Viens no pazīstamākajiem singliem.</p>
+            </div>
+          </article>
+
+          <article class="track-card glow-card reveal">
+            <div class="track-card__embed">
+              <div class="track-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="track-card__body">
+              <h3 class="track-card__title">Kaķis un pele</h3>
+              <p class="track-card__text">Kopā ar aktrisi Leldi Dreimani.</p>
+            </div>
+          </article>
+
+          <article class="track-card glow-card reveal">
+            <div class="track-card__embed">
+              <div class="track-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="track-card__body">
+              <h3 class="track-card__title">#ParLatviju</h3>
+              <p class="track-card__text">Kopdarbs par piederību un lepnumu.</p>
+            </div>
+          </article>
+
+          <article class="track-card glow-card reveal">
+            <div class="track-card__embed">
+              <div class="track-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="track-card__body">
+              <h3 class="track-card__title">West Coast #MAMBADAY</h3>
+              <p class="track-card__text">Veltījums leģendai — enerģisks bīts un vārdi.</p>
+            </div>
+          </article>
+
+          <article class="track-card glow-card reveal">
+            <div class="track-card__embed">
+              <div class="track-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="track-card__body">
+              <h3 class="track-card__title">Kreisais Krasts</h3>
+              <p class="track-card__text">Grupas skanējums — rajona balss festivālu skatuvēs.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section class="section section--alt section--center">
+      <div class="container">
+        <p class="section__kicker reveal">Sasniegumi</p>
+        <h2 class="section__title reveal">Skaņa <span class="accent">skaitļos</span></h2>
+        <div class="metrics">
+          <div class="metric reveal"><span class="metric__num">1M+</span><span class="metric__label">YouTube skatījumi</span></div>
+          <div class="metric reveal"><span class="metric__num">50+</span><span class="metric__label">Izdotas dziesmas</span></div>
+          <div class="metric reveal"><span class="metric__num">15+</span><span class="metric__label">Gadi skatuvē</span></div>
+          <div class="metric reveal"><span class="metric__num">∞</span><span class="metric__label">Festivālu enerģija</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOGRAPHY -->
+    <section class="section discography">
+      <span class="section__ghost" aria-hidden="true">02</span>
+      <div class="container">
+        <p class="section__kicker reveal">Diskogrāfija</p>
+        <h2 class="section__title reveal">Nozīmīgākie <span class="accent">darbi</span></h2>
+
+        <ul class="discography__list">
+          <li class="discography__item reveal"><a href="#" class="discography__row"><span class="discography__num">01</span><span class="discography__name">Latvija</span><span class="discography__arrow" aria-hidden="true">→</span></a></li>
+          <li class="discography__item reveal"><a href="#" class="discography__row"><span class="discography__num">02</span><span class="discography__name">#ParLatviju</span><span class="discography__arrow" aria-hidden="true">→</span></a></li>
+          <li class="discography__item reveal"><a href="#" class="discography__row"><span class="discography__num">03</span><span class="discography__name">Vēlos</span><span class="discography__arrow" aria-hidden="true">→</span></a></li>
+          <li class="discography__item reveal"><a href="#" class="discography__row"><span class="discography__num">04</span><span class="discography__name">West Coast #MAMBADAY</span><span class="discography__arrow" aria-hidden="true">→</span></a></li>
+          <li class="discography__item reveal"><a href="#" class="discography__row"><span class="discography__num">05</span><span class="discography__name">Kaķis un pele <small>ar Leldi Dreimani</small></span><span class="discography__arrow" aria-hidden="true">→</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="cta-band__title reveal">Patika dzirdētais? <span class="accent">Izveidosim tavējo.</span></h2>
+        <p class="cta-band__text reveal">Dziesma, bīts vai kopdarbs — no idejas līdz gatavam ierakstam.</p>
+        <div class="cta-band__actions reveal">
+          <a href="/services#kontakti" class="btn btn--primary">Sazināties</a>
+          <a href="/services" class="btn btn--outline">Pakalpojumi</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__wordmark" aria-hidden="true">REIKS</p>
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">© <span id="year">2026</span> Reiks (Arvis Šķirus). Visas tiesības aizsargātas.</p>
+      <a href="#" class="site-footer__top">Uz augšu ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

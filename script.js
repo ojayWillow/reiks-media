@@ -197,3 +197,26 @@ document.addEventListener("DOMContentLoaded", function () {
   yearEls.forEach(function (el) { el.textContent = new Date().getFullYear(); });
 
 });
+
+// Keep the homepage copy stationary while the two studio photos crossfade.
+(function () {
+  var slides = document.querySelectorAll('.hero__slide');
+  var button = document.querySelector('.hero__pause');
+  if (slides.length < 2 || !button) return;
+  var current = 0;
+  var timer = null;
+  var paused = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function sync() {
+    clearInterval(timer);
+    button.setAttribute('aria-pressed', String(paused));
+    button.textContent = paused ? 'Turpināt foto maiņu' : 'Apturēt foto maiņu';
+    if (!paused && !document.hidden) timer = setInterval(function () {
+      slides[current].classList.remove('is-active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('is-active');
+    }, 5500);
+  }
+  button.addEventListener('click', function () { paused = !paused; sync(); });
+  document.addEventListener('visibilitychange', sync);
+  sync();
+})();

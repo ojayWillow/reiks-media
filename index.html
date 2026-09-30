@@ -53,7 +53,11 @@
     <!-- ============================================================
          HERO
          ============================================================ -->
-    <section class="hero" id="sakums">
+    <section class="hero hero--photos" id="sakums">
+      <div class="hero__backdrop" aria-hidden="true">
+        <img class="hero__slide is-active" src="assets/images/DSC04930.jpg" alt="" width="1080" height="1616" fetchpriority="high">
+        <img class="hero__slide" src="assets/images/DSC04987.jpg" alt="" width="1080" height="1616" decoding="async">
+      </div>
       <div class="hero__overlay"></div>
       <div class="hero__content container">
         <p class="hero__kicker">Reperis · Producents · Mediju eksperts</p>
@@ -68,6 +72,7 @@
           <span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
+      <button class="hero__pause" type="button" aria-pressed="false">Apturēt foto maiņu</button>
       <a href="#par-mani" class="hero__scroll" aria-label="Ritināt uz leju">
         <span class="hero__scroll-arrow"></span>
       </a>

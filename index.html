@@ -21,6 +21,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="career.css">
+  <script src="career.js" defer></script>
 </head>
 <body>
 
@@ -89,32 +91,46 @@
     <!-- ============================================================
          ABOUT TEASER (links to About page)
          ============================================================ -->
-    <section class="section about" id="par-mani">
-      <span class="section__ghost" aria-hidden="true">01</span>
-      <div class="container split">
-        <div class="split__media reveal">
-          <div class="slideshow" role="img" aria-label="Reiks — foto slīdrāde">
-            <img class="slideshow__slide slideshow__slide--active" src="assets/images/slide-1.svg" alt="Reiks uz skatuves">
-            <img class="slideshow__slide" src="assets/images/slide-2.svg" alt="Reiks studijā" loading="lazy">
-            <img class="slideshow__slide" src="assets/images/slide-3.svg" alt="Reiks festivālā" loading="lazy">
-            <img class="slideshow__slide" src="assets/images/slide-4.svg" alt="Reiks ar publiku" loading="lazy">
-            <div class="slideshow__dots" aria-hidden="true"></div>
+    <section class="section career" id="par-mani" aria-labelledby="career-title">
+      <span class="career__years" aria-hidden="true">2007 → 2026</span>
+      <div class="container career__grid">
+        <figure class="career__media reveal">
+          <div class="career__stage">
+            <img class="career__image is-active" data-career-image="portrait" src="assets/images/DSC04987.jpg" alt="Reiks mūzikas studijā" width="1080" height="1616" loading="lazy">
+            <img class="career__image" data-career-image="olas" src="assets/images/about/olas.svg" alt="OLAS — arhīva attēla vietturis" width="800" height="1000" loading="lazy" aria-hidden="true"><img class="career__image" data-career-image="tejas-laiks" src="assets/images/about/tejas-laiks.svg" alt="TĒJAS LAIKS — arhīva attēla vietturis" width="800" height="1000" loading="lazy" aria-hidden="true"><img class="career__image" data-career-image="zelta-mikrofons" src="assets/images/about/zelta-mikrofons.svg" alt="ZELTA MIKROFONS — arhīva attēla vietturis" width="800" height="1000" loading="lazy" aria-hidden="true"><img class="career__image" data-career-image="palladium" src="assets/images/about/palladium.svg" alt="PALLADIUM — arhīva attēla vietturis" width="800" height="1000" loading="lazy" aria-hidden="true"><img class="career__image" data-career-image="reik-mic-show" src="assets/images/about/reik-mic-show.svg" alt="REIK’ MIC SHOW — arhīva attēla vietturis" width="800" height="1000" loading="lazy" aria-hidden="true">
           </div>
-          <div class="about__image-frame" aria-hidden="true"></div>
-        </div>
-        <div class="about__text">
+          <figcaption class="career__caption"><span>REIKS / ARHĪVS</span><span>2007 — 2026</span></figcaption>
+        </figure>
+        <div class="career__text">
           <p class="section__kicker reveal">Par mani</p>
-          <h2 class="section__title reveal">Arvis Šķirus — <span class="accent">Reiks</span></h2>
-          <p class="reveal">
-            Latviešu reperis, dziesmu autors un producents no Rīgas Ziepniekkalna.
-            Grupas <strong>Kreisais Krasts</strong> dalībnieks, kurš rajona ikdienu
-            pārvērš mūzikā, kas skan no festivālu lielajām skatuvēm.
-          </p>
-          <p class="reveal">
-            Šodien Reiks ir ne tikai izpildītājs, bet arī <strong>mediju eksperts</strong> —
-            producē bītus, ieraksta un miksē dziesmas, veido video un saturu
-            zīmoliem, kuri meklē īstu skanējumu.
-          </p>
+          <h2 class="career__title reveal" id="career-title">ARVIS ŠĶIRUS —<br><span class="accent">REIKS</span></h2>
+          <p class="career__intro reveal">Latviešu mūziķis, dziesmu autors, producents un radošais autors. No Kreisā Krasta un Olas līdz solo mūzikai, televīzijai, lielajām skatuvēm un saviem mediju projektiem.</p>
+          <ol class="career__index"><li class="career__entry reveal">
+      <button class="career__trigger" type="button" data-career="olas" aria-expanded="false" aria-controls="career-olas">
+        <span class="career__number" aria-hidden="true">01</span><span class="career__copy"><span class="career__name">OLAS</span><span class="career__meta">2014 →</span></span><span class="career__arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="career__inline" id="career-olas" hidden><img src="assets/images/about/olas.svg" alt="OLAS — arhīva attēla vietturis" width="800" height="1000" loading="lazy"></div>
+    </li><li class="career__entry reveal">
+      <button class="career__trigger" type="button" data-career="tejas-laiks" aria-expanded="false" aria-controls="career-tejas-laiks">
+        <span class="career__number" aria-hidden="true">02</span><span class="career__copy"><span class="career__name">TĒJAS LAIKS</span><span class="career__meta">TV / 2023</span><span class="career__meta">IDEJAS AUTORS · GALVENĀ LOMA · DZIESMU AUTORS</span></span><span class="career__arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="career__inline" id="career-tejas-laiks" hidden><img src="assets/images/about/tejas-laiks.svg" alt="TĒJAS LAIKS — arhīva attēla vietturis" width="800" height="1000" loading="lazy"></div>
+    </li><li class="career__entry reveal">
+      <button class="career__trigger" type="button" data-career="zelta-mikrofons" aria-expanded="false" aria-controls="career-zelta-mikrofons">
+        <span class="career__number" aria-hidden="true">03</span><span class="career__copy"><span class="career__name">ZELTA MIKROFONS</span><span class="career__meta">2024 · OLAS — “DZĪVOT KAIFS” · NOMINĀCIJA</span></span><span class="career__arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="career__inline" id="career-zelta-mikrofons" hidden><img src="assets/images/about/zelta-mikrofons.svg" alt="ZELTA MIKROFONS — arhīva attēla vietturis" width="800" height="1000" loading="lazy"></div>
+    </li><li class="career__entry reveal">
+      <button class="career__trigger" type="button" data-career="palladium" aria-expanded="false" aria-controls="career-palladium">
+        <span class="career__number" aria-hidden="true">04</span><span class="career__copy"><span class="career__name">PALLADIUM</span><span class="career__meta">2025 · PIRMAIS LIELAIS SOLO KONCERTS</span></span><span class="career__arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="career__inline" id="career-palladium" hidden><img src="assets/images/about/palladium.svg" alt="PALLADIUM — arhīva attēla vietturis" width="800" height="1000" loading="lazy"></div>
+    </li><li class="career__entry reveal">
+      <button class="career__trigger" type="button" data-career="reik-mic-show" aria-expanded="false" aria-controls="career-reik-mic-show">
+        <span class="career__number" aria-hidden="true">05</span><span class="career__copy"><span class="career__name">REIK’ MIC SHOW</span><span class="career__meta">2026 → · LATE NIGHT × PODCAST</span></span><span class="career__arrow" aria-hidden="true">↗</span>
+      </button>
+      <div class="career__inline" id="career-reik-mic-show" hidden><img src="assets/images/about/reik-mic-show.svg" alt="REIK’ MIC SHOW — arhīva attēla vietturis" width="800" height="1000" loading="lazy"></div>
+    </li></ol>
           <a href="/about" class="arrow-link reveal">Uzzini vairāk <span aria-hidden="true">→</span></a>
         </div>
       </div>

@@ -13,19 +13,19 @@
    DESIGN TOKENS (colors, fonts, spacing)
    ---------------------------------------------------------------- */
 :root {
-  /* Colors — crimson accent on a warm near-black theme (bold-modern) */
-  --color-bg:        #0b0b0d;   /* page background */
-  --color-bg-alt:    #121116;   /* alternate section background */
-  --color-surface:   #161419;   /* cards */
-  --color-border:    #2a2732;   /* subtle card borders */
-  --color-text:      #f5f2f6;   /* main text */
-  --color-text-dim:  #a7a0ad;   /* secondary text */
-  --color-accent:    #b31734;   /* deep crimson */
-  --color-accent-hi: #ff2d55;   /* vivid crimson for glows/hovers */
+  /* Colors — blue accent on a navy near-black theme (bold-modern) */
+  --color-bg:        #090f19;   /* page background */
+  --color-bg-alt:    #101a29;   /* alternate section background */
+  --color-surface:   #142034;   /* cards */
+  --color-border:    #293b54;   /* subtle card borders */
+  --color-text:      #f2f5fa;   /* main text */
+  --color-text-dim:  #a3afc2;   /* secondary text */
+  --color-accent:    #174a8b;   /* deep blue */
+  --color-accent-hi: #74aaff;   /* light blue for glows/hovers */
   --color-white:     #ffffff;
 
   /* Gradient used for accent text and glows */
-  --gradient-accent: linear-gradient(115deg, #ff3355 0%, #b31734 55%, #7a0f22 100%);
+  --gradient-accent: linear-gradient(115deg, #548bd5 0%, #174a8b 55%, #102e58 100%);
 
   /* Typography — Archivo (heavy) for display, Inter for body (see <head>) */
   --font-display: "Archivo", "Arial Black", Impact, sans-serif;
@@ -130,14 +130,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .btn--primary {
   background: var(--color-accent);
   color: var(--color-white);
-  box-shadow: 0 8px 30px rgba(158, 27, 50, 0.35);
+  box-shadow: 0 8px 30px rgba(45, 103, 181, 0.35);
 }
 .btn--primary:hover {
   background: var(--color-accent-hi);
-  box-shadow: 0 12px 40px rgba(224, 41, 77, 0.45);
+  box-shadow: 0 12px 40px rgba(45, 103, 181, 0.45);
 }
 
-/* Outline button — crimson fill sweeps up from the bottom on hover */
+/* Outline button — blue fill sweeps up from the bottom on hover */
 .btn--outline {
   border-color: rgba(255, 255, 255, 0.5);
   color: var(--color-white);
@@ -270,7 +270,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% 110%, rgba(158, 27, 50, 0.22), transparent 55%),
+    radial-gradient(ellipse at 50% 110%, rgba(45, 103, 181, 0.22), transparent 55%),
     linear-gradient(to bottom,
       rgba(10, 10, 11, 0.6) 0%,
       rgba(10, 10, 11, 0.3) 45%,
@@ -488,14 +488,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   position: absolute;
   inset: 0;
   background: radial-gradient(340px circle at var(--mx, 50%) var(--my, 50%),
-              rgba(224, 41, 77, 0.13), transparent 65%);
+              rgba(45, 103, 181, 0.13), transparent 65%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
 }
 .glow-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(224, 41, 77, 0.45);
+  border-color: rgba(45, 103, 181, 0.45);
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
 }
 .glow-card:hover::before { opacity: 1; }
@@ -628,7 +628,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
-  background: rgba(179, 23, 52, 0.16);
+  background: rgba(45, 103, 181, 0.16);
   color: var(--color-accent-hi);
   margin-bottom: 1.4rem;
 }
@@ -653,8 +653,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   justify-content: center;
   align-items: flex-start;
   gap: 0.4rem;
-  background: linear-gradient(140deg, rgba(158, 27, 50, 0.25), var(--color-surface) 65%);
-  border-color: rgba(224, 41, 77, 0.35);
+  background: linear-gradient(140deg, rgba(45, 103, 181, 0.25), var(--color-surface) 65%);
+  border-color: rgba(45, 103, 181, 0.35);
 }
 .skill-card--highlight .btn { margin-top: 1rem; }
 
@@ -688,7 +688,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   height: 58px;
   color: var(--color-accent);
   opacity: 0.9;
-  filter: drop-shadow(0 0 24px rgba(224, 41, 77, 0.45));
+  filter: drop-shadow(0 0 24px rgba(45, 103, 181, 0.45));
   transition: transform 0.25s ease;
 }
 .track-card:hover .track-card__placeholder svg { transform: scale(1.15); }
@@ -727,7 +727,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition: background 0.25s ease, padding-left 0.25s ease;
 }
 .discography__row:hover {
-  background: rgba(158, 27, 50, 0.09);
+  background: rgba(45, 103, 181, 0.09);
   padding-left: 1.4rem;
 }
 
@@ -793,7 +793,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .gallery__grid img:hover {
   transform: scale(1.03);
   filter: saturate(1.15);
-  border-color: rgba(224, 41, 77, 0.4);
+  border-color: rgba(45, 103, 181, 0.4);
 }
 
 /* ----------------------------------------------------------------
@@ -829,7 +829,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-color: var(--color-accent);
   background: var(--color-accent);
   transform: translateY(-4px);
-  box-shadow: 0 10px 26px rgba(158, 27, 50, 0.4);
+  box-shadow: 0 10px 26px rgba(45, 103, 181, 0.4);
 }
 .contact__socials svg { width: 20px; height: 20px; }
 
@@ -861,7 +861,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .form-field input:focus,
 .form-field textarea:focus {
   border-color: var(--color-accent-hi);
-  box-shadow: 0 0 0 3px rgba(224, 41, 77, 0.15);
+  box-shadow: 0 0 0 3px rgba(45, 103, 181, 0.15);
   outline: none;
 }
 
@@ -897,7 +897,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   margin-bottom: 1.5rem;
   transition: -webkit-text-stroke-color 0.4s ease;
 }
-.site-footer__wordmark:hover { -webkit-text-stroke-color: rgba(224, 41, 77, 0.4); }
+.site-footer__wordmark:hover { -webkit-text-stroke-color: rgba(45, 103, 181, 0.4); }
 
 .site-footer__inner {
   display: flex;
@@ -1013,7 +1013,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-align: center;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 50% -10%, rgba(158, 27, 50, 0.30), transparent 60%),
+    radial-gradient(ellipse at 50% -10%, rgba(45, 103, 181, 0.30), transparent 60%),
     var(--color-bg);
   border-bottom: 1px solid var(--color-border);
 }
@@ -1021,7 +1021,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, transparent 40%, rgba(224,41,77,0.06) 50%, transparent 60%);
+  background: linear-gradient(115deg, transparent 40%, rgba(45, 103, 181,0.06) 50%, transparent 60%);
   pointer-events: none;
 }
 .page-banner__kicker {
@@ -1097,7 +1097,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   width: 52px; height: 52px;
   display: flex; align-items: center; justify-content: center;
   border-radius: var(--radius);
-  background: rgba(179, 23, 52, 0.16);
+  background: rgba(45, 103, 181, 0.16);
   color: var(--color-accent-hi);
 }
 .service-card__icon svg { width: 26px; height: 26px; }
@@ -1171,8 +1171,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .price-card { padding: 2.4rem 2rem; display: flex; flex-direction: column; }
 .price-card--featured {
-  background: linear-gradient(150deg, rgba(158, 27, 50, 0.28), var(--color-surface) 60%);
-  border-color: rgba(224, 41, 77, 0.5);
+  background: linear-gradient(150deg, rgba(45, 103, 181, 0.28), var(--color-surface) 60%);
+  border-color: rgba(45, 103, 181, 0.5);
 }
 .price-card__tag {
   align-self: flex-start;
@@ -1223,7 +1223,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   top: 0.35rem;
   width: 12px; height: 12px; border-radius: 999px;
   background: var(--color-accent-hi);
-  box-shadow: 0 0 0 4px rgba(224,41,77,0.18);
+  box-shadow: 0 0 0 4px rgba(45, 103, 181,0.18);
 }
 .timeline__year {
   font-family: var(--font-display);
@@ -1275,7 +1275,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-align: center;
   padding-block: clamp(4rem, 10vw, 6.5rem);
   background:
-    radial-gradient(ellipse at 50% 120%, rgba(224,41,77,0.22), transparent 60%),
+    radial-gradient(ellipse at 50% 120%, rgba(45, 103, 181,0.22), transparent 60%),
     var(--color-bg-alt);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
@@ -1349,7 +1349,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero__slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 57%; opacity: 0; transition: opacity 1.4s ease; }
 .hero__slide.is-active { opacity: 1; }
 .hero--photos .hero__overlay { background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.48) 55%, rgba(0,0,0,.8)); }
-.hero--photos .hero__kicker, .hero--photos .hero__tagline { color: #f5f2f6; text-shadow: 0 2px 12px #000; }
+.hero--photos .hero__kicker, .hero--photos .hero__tagline { color: #f2f5fa; text-shadow: 0 2px 12px #000; }
 .hero__pause { position: absolute; bottom: 1.4rem; right: 1.25rem; z-index: 2; border: 1px solid #ffffff70; border-radius: 4px; background: #0009; color: white; padding: .5rem .75rem; font: inherit; font-size: .7rem; cursor: pointer; }
 @media (max-width: 600px) {
   .hero__slide { object-position: 58% center; }

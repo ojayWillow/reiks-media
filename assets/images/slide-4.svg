@@ -9,7 +9,7 @@
   <rect width="600" height="750" fill="url(#bg4)"/>
   <circle cx="300" cy="280" r="105" fill="#2c282f"/>
   <path d="M300 415 C175 415 115 515 105 750 L495 750 C485 515 425 415 300 415 Z" fill="#2c282f"/>
-  <g fill="#9E1B32" opacity="0.4">
+  <g fill="#174a8b" opacity="0.4">
     <rect x="440" y="620" width="10" height="46"/>
     <rect x="460" y="600" width="10" height="66"/>
     <rect x="480" y="635" width="10" height="31"/>

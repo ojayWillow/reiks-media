@@ -39,3 +39,27 @@
   .career *, .career *::after { transition: none !important; animation: none !important; }
   .career__image, .career__entry.is-active .career__arrow { transform: none; }
 }
+
+/* Preserve both OLAS members in the square artist photograph. */
+.career__image[data-career-image="olas"], #career-olas img { object-fit: contain; background: var(--color-bg-alt); }
+
+/* Keep the complete performance scene visible. */
+.career__image[data-career-image="tejas-laiks"], #career-tejas-laiks img { object-fit: contain; background: var(--color-bg-alt); }
+
+/* Align the compact rating with the project title; keep it a separate link. */
+.career__entry:has(.career__rating) .career__name { padding-right: 7.5rem; }
+.career__rating { position: absolute; top: 1.2rem; right: 2rem; display: inline-flex; align-items: baseline; gap: .4rem; color: var(--color-text-dim); font-size: .7rem; line-height: 1.7; text-decoration: none; white-space: nowrap; }
+.career__rating strong { color: var(--color-accent-hi); }
+.career__rating > span { display: none; }
+.career__rating:hover, .career__rating:focus-visible { color: var(--color-text); text-decoration: underline; }
+@media(max-width:480px) {
+ .career__entry:has(.career__rating) .career__name { padding-right: 6.1rem; }
+ .career__rating { right: 1.7rem; font-size: .6rem; gap: .3rem; }
+ .career__entry:has(.career__rating) .career__name { font-size: 1rem; }
+}
+
+.career__image[data-career-image="zelta-mikrofons"], #career-zelta-mikrofons img { object-fit: contain; background: var(--color-bg-alt); }
+
+.career__image[data-career-image="palladium"], #career-palladium img { object-fit: contain; background: var(--color-bg-alt); }
+
+.career__image[data-career-image="reik-mic-show"], #career-reik-mic-show img { object-fit: contain; background: var(--color-bg-alt); }

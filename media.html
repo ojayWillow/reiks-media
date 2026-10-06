@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="media.css">
 </head>
-<body class="media-page">
+<body class="media-page media-page--simple">
 
   <div class="scroll-progress" aria-hidden="true"></div>
 
@@ -47,37 +47,44 @@
   </header>
 
   <main id="saturs">
-    <section class="media-hero" id="sakums">
-      <div class="container media-hero__grid">
-        <div>
-          <p class="section__kicker">Reiks MEDIA / Radošā aģentūra</p>
-          <h1>Saturs ar virzienu.<br><span>Zīmols ar raksturu.</span></h1>
-          <p class="media-hero__intro">Video. Mājaslapas. Klientu piesaiste.</p>
-          <p class="media-lead">Veidojam video, izstrādājam mājaslapas un palīdzam uzņēmumiem piesaistīt klientus. No pirmās idejas līdz saturam un skaidram ceļam uz pieteikumu.</p>
-          <div class="media-actions"><a class="btn btn--primary" href="#kontakti">Pārrunāsim sadarbību <span aria-hidden="true">↗</span></a><a class="arrow-link" href="#pakalpojumi">Skatīt pakalpojumus ↓</a></div>
-        </div>
-        <div class="media-hero__visual"><span class="media-frame-label">REIKS MEDIA / RADOŠAIS PROCESS</span>
-          <img src="assets/images/services/media-hero.jpg" alt="Videogrāfs ar kameru filmēšanas laukumā" width="1600" height="2400" fetchpriority="high">
-          <div class="media-hero__caption"><span>01 / IDEJA → ĪSTENOŠANA</span><strong>Radām saturu.<br>Veidojam saikni.</strong></div>
+    <section class="media-hero media-hero--cinema" id="sakums" aria-label="Reiks MEDIA — radošā aģentūra">
+      <div class="media-cinema" aria-roledescription="slaidrāde" aria-label="Radošā procesa foto">
+        <img class="media-cinema__slide is-active" src="assets/images/services/video.jpg" alt="Profesionāla kamera filmēšanas laukumā" width="1200" height="800" fetchpriority="high">
+        <img class="media-cinema__slide" src="assets/images/services/media-hero.jpg" alt="Videogrāfs gatavojas filmēšanai" width="1600" height="2400" decoding="async" aria-hidden="true">
+        <img class="media-cinema__slide" src="assets/images/services/production.jpg" alt="Skaņas pults radošajā darba procesā" width="1200" height="1800" decoding="async" aria-hidden="true">
+      </div>
+      <div class="container media-cinema__content">
+        <p class="section__kicker">REIKS MEDIA / RADOŠĀ AĢENTŪRA</p>
+        <h1>Radām saturu,<br><span>ko pamana.</span></h1>
+        <p class="media-cinema__lead">Video saturs, mājaslapas un mārketings uzņēmumiem.<br> Viena komanda tavam nākamajam projektam.</p>
+        <div class="media-actions"><a class="btn btn--primary" href="#pakalpojumi">Apskatīt iespējas <span aria-hidden="true">↓</span></a><a class="arrow-link" href="#kontakti">Pieteikt sarunu ↗</a></div>
+      </div>
+      <div class="container media-cinema__bottom">
+        <div><span class="media-cinema__eyebrow">RADOŠAIS PROCESS / ILUSTRATĪVI ATTĒLI</span><p id="media-slide-caption">01 / Video veidošana</p></div>
+        <div class="media-cinema__controls" aria-label="Slaidrādes vadība">
+          <button type="button" class="media-cinema__dot is-active" data-media-slide="0" aria-label="Rādīt foto: video veidošana" aria-pressed="true">01</button>
+          <button type="button" class="media-cinema__dot" data-media-slide="1" aria-label="Rādīt foto: filmēšanas process" aria-pressed="false">02</button>
+          <button type="button" class="media-cinema__dot" data-media-slide="2" aria-label="Rādīt foto: skaņas apstrāde" aria-pressed="false">03</button>
+          <button type="button" class="media-cinema__pause" id="media-slides-pause" aria-label="Apturēt slaidrādi">Ⅱ</button>
         </div>
       </div>
     </section>
-    <div class="media-strip"><div class="container"><span>STRATĒĢIJA</span><span>RADOŠAIS RISINĀJUMS</span><span>ĪSTENOŠANA</span><span>PILNVEIDE</span></div></div>
-    <section class="section" id="pakalpojumi"><div class="container">
-      <p class="section__kicker">Ko piedāvājam</p><h2 class="section__title">No idejas līdz<br><span class="accent">klienta pieteikumam.</span></h2>
-      <p class="media-section-intro">Atsevišķs projekts vai pilna satura pārvaldība — izvēlamies risinājumu atbilstoši tava uzņēmuma mērķim.</p><div class="media-services">
-        <article class="media-service"><span class="media-number">01 / VIDEO</span><h3>Video veidošana</h3><p>Parādām, ar ko tavs uzņēmums ir īpašs, un pārvēršam idejas video, ko cilvēki vēlas skatīties.</p><ul><li>Video idejas un scenāriji</li><li>Filmēšana un montāža</li><li>Reklāmas un sociālo tīklu video</li><li>Subtitri un pielāgošana dažādiem formātiem</li></ul><div class="media-art media-art--video" aria-label="Video veidošanas ilustrācija"><img src="assets/images/services/video.jpg" alt="Profesionāla filmēšanas kamera" loading="lazy"><span class="art-label">VIDEO / ILUSTRĀCIJA</span><div class="art-play" aria-hidden="true">▶</div><div class="art-timeline" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div></article>
-        <article class="media-service"><span class="media-number">02 / MĀJASLAPAS</span><h3>Mājaslapu izstrāde</h3><p>Veidojam pārskatāmas mājaslapas, kas iepazīstina ar uzņēmumu un palīdz apmeklētājam spert nākamo soli.</p><ul><li>Struktūra, dizains un izstrāde</li><li>Pakalpojumu un kampaņu lapas</li><li>Pielāgošana mobilajām ierīcēm</li><li>Pieteikuma formas un aicinājumi sazināties</li></ul><div class="media-art media-art--web" aria-label="Mājaslapas izstrādes piemērs"><span class="art-label">MĀJASLAPA / PARAUGS</span><div class="art-browser"><div class="art-browser__bar" aria-hidden="true">● ● ●</div><span>TAVS ZĪMOLS</span><strong>Ideja kļūst<br>par pieredzi.</strong><div class="art-fake-button">Pieteikties ↗</div><div class="art-blocks" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="art-phone" aria-hidden="true"><i></i><strong>Tavs<br>zīmols.</strong><span>↗</span></div></div></article>
-        <article class="media-service"><span class="media-number">03 / MĀRKETINGS</span><h3>Mārketings un klientu piesaiste</h3><p>Savienojam video saturu ar mārketinga stratēģiju, lai uzrunātu atbilstošo auditoriju un veicinātu interesi par tavu piedāvājumu.</p><ul><li>Satura un kampaņu stratēģija</li><li>Video saturs klientu piesaistei</li><li>Reklāmas materiāli un vēstījumi</li><li>Rezultātu izvērtēšana un satura pilnveide</li></ul><div class="media-art media-art--marketing" aria-label="Mārketinga stratēģijas ilustrācija"><span class="art-label">MĀRKETINGS / ILUSTRĀCIJA</span><div class="art-message"><span>01 / AUDITORIJA</span><strong>Īstais vēstījums.<br>Īstajiem cilvēkiem.</strong></div><div class="art-tags"><span>VIDEO</span><span>PIEDĀVĀJUMS</span><span>SAZIŅA ↗</span></div><div class="art-rings" aria-hidden="true"><i></i><i></i><i></i></div></div></article>
-        <article class="media-service"><span class="media-number">04 / PIETEIKUMI</span><h3>Pieteikumu piesaistes sistēma</h3><p>Izveidojam skaidru ceļu no pirmā video skatījuma līdz pieteikumam, lai potenciālajiem klientiem būtu viegli sazināties.</p><ul><li>Video, kas iepazīstina ar piedāvājumu</li><li>Mērķim pielāgota mājaslapas sadaļa</li><li>Pieteikumu saņemšanas risinājums</li><li>Pieteikumu plūsmas pārskatīšana un uzlabošana</li></ul><div class="media-art media-art--flow" aria-label="Pieteikumu piesaistes ceļš: video, mājaslapa, pieteikums, saziņa"><span class="art-label">PIETEIKUMI / DARBĪBAS PRINCIPS</span><div class="art-flow"><span><b>01</b>Video</span><i aria-hidden="true">↓</i><span><b>02</b>Mājaslapa</span><i aria-hidden="true">↓</i><span><b>03</b>Pieteikums</span><i aria-hidden="true">↓</i><span><b>04</b>Saziņa ↗</span></div></div></article>
+    <section class="section media-offer-summary" id="pakalpojumi" aria-labelledby="media-services-title"><div class="container">
+      <p class="section__kicker">Ko piedāvājam</p><h2 class="section__title" id="media-services-title">Viss tavam <span class="accent">nākamajam solim.</span></h2>
+      <div class="media-compact-services">
+        <article><span class="media-number">01 / VIDEO</span><h3>Video saturs</h3><p>Reklāmas un sociālo tīklu video — no idejas un filmēšanas līdz gatavai montāžai.</p></article>
+        <article><span class="media-number">02 / MĀJASLAPAS</span><h3>Mājaslapu izstrāde</h3><p>Pārskatāma mājaslapa, kas iepazīstina ar tavu piedāvājumu un ļauj ērti pieteikties.</p></article>
+        <article><span class="media-number">03 / MĀRKETINGS</span><h3>Klientu piesaiste</h3><p>Satura stratēģija, reklāmas materiāli un pieteikumu saņemšanas risinājumi.</p></article>
       </div>
     </div></section>
-    <section class="section section--alt"><div class="container media-monthly">
-      <div><p class="section__kicker">Regulāra sadarbība</p><h2 class="section__title">Tava satura komanda.<br><span class="accent">Katru mēnesi.</span></h2><p class="media-lead">Pārņemam ikdienas satura plānošanu un veidošanu, lai tu varētu koncentrēties uz savu uzņēmumu. Strādājam pēc saskaņota plāna ar ikmēneša maksu.</p><a class="btn btn--primary" href="#kontakti">Pieteikt sarunu</a></div>
-      <div class="media-monthly__panel"><span class="media-number">IKMĒNEŠA SADARBĪBA</span><h3>No plāna līdz publicēšanai</h3><ul><li>Satura stratēģija un ikmēneša plāns</li><li>Video idejas, scenāriji un filmēšana</li><li>Montāža un materiālu sagatavošana</li><li>Satura publicēšana pēc saskaņošanas</li><li>Rezultātu pārrunas un nākamā mēneša plāns</li></ul><p>Par satura apjomu, darba kārtību un ikmēneša maksu vienojamies pēc sarunas par tava uzņēmuma vajadzībām.</p></div>
+    <section class="section media-retainer" id="sadarbiba" aria-labelledby="retainer-title"><div class="container">
+      <div class="media-retainer__top">
+        <div class="media-retainer__intro"><p class="section__kicker">Regulāra sadarbība</p><h2 class="section__title" id="retainer-title">Tavs zīmols.<br><span class="accent">Mūsu radošā komanda.</span></h2><p class="media-lead">Pārņemam satura plānošanu un veidošanu ar saskaņotu ikmēneša maksu. Tu koncentrējies uz uzņēmumu, mēs — uz tā saturu.</p></div>
+        <aside class="media-retainer__offer" aria-label="Ikmēneša sadarbības piedāvājums"><div class="media-retainer__offer-top"><span>REIKS MEDIA</span><span>IK MĒNESI ↗</span></div><p class="media-retainer__offer-title">Viena komanda.<br>Skaidrs plāns.<br><span>Saturs tavam zīmolam.</span></p><ul class="media-retainer__included"><li>Idejas un satura plāns</li><li>Filmēšana un montāža</li><li>Paveiktā izvērtēšana</li></ul><a class="btn" href="#kontakti">Pārrunāt ikmēneša sadarbību ↗</a><p class="media-retainer__offer-note">Apjomu un maksu saskaņojam individuāli.</p></aside>
+      </div>
+      <details class="media-retainer__details"><summary>Par ko vienojamies pirms sadarbības?</summary><p>Par satura apjomu, filmēšanas reizēm, kanāliem, termiņiem, labojumiem un maksu. Publicēšanu iekļaujam pēc vienošanās. No tevis nepieciešama informācija par uzņēmumu un materiālu apstiprināšana.</p></details>
     </div></section>
-    <section class="section"><div class="container"><p class="section__kicker">Kā strādājam</p><h2 class="section__title">Skaidrs process.<br><span class="accent">Kopīgs virziens.</span></h2><ol class="media-process"><li><span>01</span><h3>Iepazīstam uzņēmumu</h3><p>Pārrunājam piedāvājumu, auditoriju un mērķi.</p></li><li><span>02</span><h3>Izveidojam plānu</h3><p>Saskaņojam idejas, darbu apjomu un termiņus.</p></li><li><span>03</span><h3>Veidojam un publicējam</h3><p>Sagatavojam materiālus un publicējam pēc apstiprināšanas.</p></li><li><span>04</span><h3>Izvērtējam un pilnveidojam</h3><p>Pārskatām rezultātus un pielāgojam nākamos soļus.</p></li></ol></div></section>
-    <section class="section section--alt" id="kontakti"><div class="container media-contact"><p class="section__kicker">Sāksim ar sarunu</p><h2 class="section__title">Pastāsti par <span class="accent">savu uzņēmumu.</span></h2><p class="media-lead">Raksti mums Instagram. Pastāsti, ko uzņēmums piedāvā, kādu auditoriju vēlies sasniegt un kāda palīdzība nepieciešama. Kopā atradīsim piemērotu sadarbības veidu.</p><a class="btn btn--primary" href="https://www.instagram.com/reiksofficial/" target="_blank" rel="noopener">Sazināties Instagram ↗</a><p class="media-contact__handle">@reiksofficial</p></div></section>
+    <section class="section section--alt" id="kontakti"><div class="container media-contact"><p class="section__kicker">Sāksim ar sarunu</p><h2 class="section__title">Pastāsti par <span class="accent">savu uzņēmumu.</span></h2><p class="media-lead">Pastāsti par savu ieceri — pārrunāsim piemērotāko risinājumu.</p><a class="btn btn--primary" href="https://www.instagram.com/reiksofficial/" target="_blank" rel="noopener">Sazināties Instagram ↗</a><p class="media-contact__handle">@reiksofficial</p></div></section>
   </main>
   <footer class="site-footer">
     <p class="site-footer__wordmark" aria-hidden="true">REIKS MEDIA</p>
@@ -88,5 +95,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="media-slideshow.js"></script>
 </body>
 </html>

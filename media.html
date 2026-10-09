@@ -41,7 +41,7 @@
         <li><a href="/music" class="nav__link">Mūzika</a></li>
         <li><a href="/services" class="nav__link">Pakalpojumi</a></li>
         <li><a href="/media" class="nav__link nav__link--active" aria-current="page">Reiks MEDIA</a></li>
-        <li><a href="#kontakti" class="nav__link nav__link--cta">Sazināties</a></li>
+        <li><a href="#kontakti" class="nav__link nav__link--cta">Rezervēt sarunu</a></li>
       </ul>
     </nav>
   </header>
@@ -84,7 +84,42 @@
       </div>
       <details class="media-retainer__details"><summary>Par ko vienojamies pirms sadarbības?</summary><p>Par satura apjomu, filmēšanas reizēm, kanāliem, termiņiem, labojumiem un maksu. Publicēšanu iekļaujam pēc vienošanās. No tevis nepieciešama informācija par uzņēmumu un materiālu apstiprināšana.</p></details>
     </div></section>
-    <section class="section section--alt" id="kontakti"><div class="container media-contact"><p class="section__kicker">Sāksim ar sarunu</p><h2 class="section__title">Pastāsti par <span class="accent">savu uzņēmumu.</span></h2><p class="media-lead">Pastāsti par savu ieceri — pārrunāsim piemērotāko risinājumu.</p><a class="btn btn--primary" href="https://www.instagram.com/reiksofficial/" target="_blank" rel="noopener">Sazināties Instagram ↗</a><p class="media-contact__handle">@reiksofficial</p></div></section>
+    <section class="section section--alt media-booking" id="kontakti" aria-labelledby="booking-title"><div class="container">
+      <div class="media-booking__layout">
+        <div class="media-booking__intro">
+          <p class="section__kicker">Nākamais solis</p>
+          <h2 id="booking-title">Laba sadarbība<br>sākas ar <span>sarunu.</span></h2>
+          <p class="media-lead">Pastāsti par savu ieceri. Pārrunāsim, ko varam radīt kopā.</p>
+          <div class="media-booking__meeting"><span class="media-booking__meeting-icon" aria-hidden="true">↗</span><div><strong>Iepazīšanās saruna</strong><span>30 minūtes · bez saistībām</span></div></div>
+          <p class="media-booking__alternative">Ērtāk uzrakstīt? <a href="https://www.instagram.com/reiksofficial/" target="_blank" rel="noopener">Instagram ↗</a></p>
+        </div>
+        <form class="media-booking__form" id="appointment-form" action="/api/booking" method="post" data-delivery="email" data-recipient="vitolsoskars@gmail.com">
+          <div class="media-booking__form-top"><span>PIETEIKT SARUNU</span><span>REIKS MEDIA</span></div>
+          <div class="media-booking__steps" aria-label="Pieteikuma soļi"><span id="booking-step-time" aria-current="step"><b>01</b> Datums un laiks</span><span id="booking-step-contact"><b>02</b> Kontaktinformācija</span></div>
+          <div id="booking-time-panel">
+            <h3>Kad tev būtu ērti?</h3>
+            <p class="media-booking__hint">Izvēlies vēlamo datumu un laiku.</p>
+            <div id="booking-days" class="media-booking__days" aria-label="Tuvākās darba dienas"></div>
+            <label class="media-booking__date-label">Cits datums<input name="date" type="date" required aria-describedby="appointment-time-note"></label>
+            <fieldset class="media-booking__times"><legend>Laiks <span>Latvijas laiks</span></legend>
+<label><input type="radio" name="time" value="10:00" required><span>10:00</span></label><label><input type="radio" name="time" value="10:30" required><span>10:30</span></label><label><input type="radio" name="time" value="11:00" required><span>11:00</span></label><label><input type="radio" name="time" value="11:30" required><span>11:30</span></label><label><input type="radio" name="time" value="12:00" required><span>12:00</span></label><label><input type="radio" name="time" value="12:30" required><span>12:30</span></label><label><input type="radio" name="time" value="13:00" required><span>13:00</span></label><label><input type="radio" name="time" value="13:30" required><span>13:30</span></label><label><input type="radio" name="time" value="14:00" required><span>14:00</span></label><label><input type="radio" name="time" value="14:30" required><span>14:30</span></label><label><input type="radio" name="time" value="15:00" required><span>15:00</span></label><label><input type="radio" name="time" value="15:30" required><span>15:30</span></label><label><input type="radio" name="time" value="16:00" required><span>16:00</span></label><label><input type="radio" name="time" value="16:30" required><span>16:30</span></label>
+            </fieldset>
+            <p class="media-booking__hint media-booking__confirmation" id="appointment-time-note">Šis ir laika pieprasījums. Sarunu apstiprināsim e-pastā.</p>
+            <button class="media-booking__button" id="booking-next" type="button" hidden>Turpināt <span aria-hidden="true">↗</span></button>
+          </div>
+          <div id="booking-contact-panel">
+            <h3>Iepazīsimies.</h3>
+            <div class="media-booking__selection" id="booking-selection" hidden><span id="booking-selection-text"></span><button id="booking-back" type="button">Mainīt</button></div>
+            <div class="media-booking__fields"><label>Vārds<input name="name" autocomplete="name" required maxlength="100" placeholder="Tavs vārds"></label><label>E-pasts<input name="email" type="email" autocomplete="email" required maxlength="254" placeholder="vards@uznemums.lv"></label></div>
+            <label class="media-booking__message">Tava iecere <span>(nav obligāti)</span><textarea name="message" rows="2" maxlength="2000" placeholder="Par ko vēlies parunāt?"></textarea></label>
+            <div class="media-booking__trap" aria-hidden="true"><label>Mājaslapa<input name="website" tabindex="-1" autocomplete="off"></label></div>
+            <button class="media-booking__button" type="submit">Nosūtīt e-pastā <span aria-hidden="true">↗</span></button>
+            <p class="media-booking__hint media-booking__confirmation">Atvērsies tava e-pasta lietotne ar sagatavotu pieteikumu. Nosūti to, un mēs apstiprināsim sarunas laiku.</p>
+          </div>
+          <p class="media-booking__status" id="appointment-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div></section>
   </main>
   <footer class="site-footer">
     <p class="site-footer__wordmark" aria-hidden="true">REIKS MEDIA</p>
@@ -96,5 +131,6 @@
 
   <script src="script.js"></script>
   <script src="media-slideshow.js"></script>
+  <script src="media-booking.js"></script>
 </body>
 </html>

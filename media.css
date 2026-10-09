@@ -251,3 +251,54 @@
 .media-page--simple .media-cinema__content { padding-top:8rem; padding-bottom:10rem; }
 @media(max-width:760px) { .media-page--simple .media-hero--cinema { min-height:760px; } }
 @media(max-width:480px) { .media-page--simple .media-cinema__content { padding-top:7rem; padding-bottom:13rem; } }
+
+/* Guided appointment request. */
+.media-page--simple .media-booking { padding:6rem 0; background:#0c1727; }
+.media-booking__layout { display:grid; grid-template-columns:.9fr 1.1fr; gap:6rem; align-items:center; }
+.media-booking__intro h2 { font-family:Archivo, sans-serif; font-size:clamp(2.5rem,4.2vw,3.6rem); letter-spacing:-.055em; line-height:1.08; font-weight:700; margin:1.7rem 0; }
+.media-booking__intro h2 span { color:#93b9e9; }
+.media-booking__intro .media-lead { font-size:.98rem; line-height:1.8; max-width:24rem; color:#a6b6ca; }
+.media-booking__meeting { display:flex; align-items:center; gap:1rem; border-top:1px solid #2b3c53; margin-top:2.4rem; padding-top:1.5rem; max-width:24rem; }
+.media-booking__meeting-icon { display:grid; place-items:center; width:40px; height:40px; border:1px solid #39516d; border-radius:50%; color:#93b9e9; font-size:1.4rem; }
+.media-booking__meeting strong,.media-booking__meeting div>span { display:block; }
+.media-booking__meeting strong { font-size:.85rem; font-weight:500; }
+.media-booking__meeting div>span { color:#9eaec1; font-size:.75rem; margin-top:.3rem; }
+.media-booking__alternative { font-size:.76rem; color:#9eaec1; margin-top:2.5rem; }
+.media-booking__alternative a { color:#d7e6fa; margin-left:.4rem; text-decoration:underline; text-underline-offset:4px; }
+.media-booking__form { background:#f2f5fa; color:#17263c; padding:2rem 2.25rem; border-radius:4px; box-shadow:0 24px 70px #03091240; }
+.media-booking__form [hidden] { display:none !important; }
+.media-booking__form-top { display:flex; justify-content:space-between; font-size:.57rem; letter-spacing:.12em; font-weight:600; padding-bottom:1rem; border-bottom:1px solid #d5dfe9; color:#52657d; }
+.media-booking__steps { display:flex; gap:1.6rem; margin:1.4rem 0 1.8rem; font-size:.7rem; color:#8693a3; }
+.media-booking__steps b { font-size:.62rem; font-weight:500; margin-right:.4rem; }
+.media-booking__steps [aria-current] { color:#224f88; }
+.media-booking__form h3 { font-family:Archivo,sans-serif; font-size:1.6rem; font-weight:600; letter-spacing:-.04em; line-height:1.2; margin-bottom:.4rem; }
+.media-booking__hint { color:#697a8f; font-size:.74rem; line-height:1.6; }
+.media-booking__days { display:grid; grid-template-columns:repeat(5,1fr); gap:.5rem; margin:1.2rem 0 .8rem; }
+.media-booking__day { display:flex; flex-direction:column; gap:.3rem; align-items:center; border:1px solid #d1dce8; background:transparent; border-radius:4px; padding:.7rem .2rem; color:#66768a; cursor:pointer; font:inherit; }
+.media-booking__day span { font-size:.66rem; }.media-booking__day strong { font-size:1.35rem; font-weight:500; color:#203851; }.media-booking__day small { font-size:.58rem; }
+.media-booking__day[aria-pressed=true] { background:#244f84; border-color:#244f84; color:#d3e4fa; }.media-booking__day[aria-pressed=true] strong { color:white; }
+.media-booking__form label { display:block; font-size:.74rem; font-weight:500; }.media-booking__form label>span { font-weight:400; color:#6c7d91; }
+.media-booking__date-label { display:flex !important; align-items:center; justify-content:space-between; padding:.4rem 0 1rem; color:#4e6380; border-bottom:1px solid #d5dfe9; }
+.media-booking__form input:not([type=radio]),.media-booking__form textarea { display:block; width:100%; box-sizing:border-box; margin-top:.5rem; padding:.8rem 0; border:0; border-bottom:1px solid #b7c6d7; border-radius:0; background:transparent; color:#1c344f; font:inherit; font-size:.87rem; color-scheme:light; min-width:0; }
+.media-booking__form .media-booking__date-label input { width:auto; max-width:165px; font-size:.75rem; padding:.3rem 0; margin:0; border:0; }
+.media-booking__form textarea { resize:vertical; }
+.media-booking__form input::placeholder,.media-booking__form textarea::placeholder { color:#8190a2; }
+.media-booking__times { display:grid; grid-template-columns:repeat(4,1fr); gap:.45rem; padding:0; border:0; margin:1.1rem 0 .8rem; }
+.media-booking__times legend { display:flex; justify-content:space-between; width:100%; padding:0 0 .8rem; font-size:.75rem; font-weight:500; }.media-booking__times legend span { font-size:.65rem; color:#79899d; font-weight:400; }
+.media-booking__times label { position:relative; }.media-booking__times input { position:absolute; opacity:0; width:1px; height:1px; }
+.media-booking__times label>span { display:block; text-align:center; border:1px solid #ccd9e7; border-radius:3px; padding:.6rem .2rem; font-size:.74rem; color:#304b6c; cursor:pointer; }
+.media-booking__times input:checked+span { background:#dce9f9; border-color:#416fa6; color:#1c4679; }
+.media-booking__times input:focus-visible+span,.media-booking__day:focus-visible,.media-booking__form input:focus-visible,.media-booking__form textarea:focus-visible,.media-booking__button:focus-visible { outline:2px solid #3d73b9; outline-offset:3px; }
+.media-booking__confirmation { font-size:.68rem; margin:.85rem 0 0; }
+.media-booking__button { display:flex; justify-content:space-between; align-items:center; width:100%; padding:1rem 1.25rem; border:0; background:#193c68; color:white; font:inherit; font-size:.8rem; font-weight:500; cursor:pointer; margin-top:1.25rem; border-radius:3px; transition:background .2s; }
+.media-booking__button:hover { background:#28558d; }.media-booking__button span { font-size:1.25rem; }.media-booking__button:disabled { opacity:.6; cursor:wait; }
+.media-booking__fields { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-top:1.5rem; }
+.media-booking__message { margin-top:1.3rem; }
+.media-booking__selection { display:flex; justify-content:space-between; align-items:center; gap:1rem; background:#e3ebf5; margin-top:1.2rem; padding:.85rem; font-size:.75rem; }.media-booking__selection button { background:none; border:0; color:#295b96; text-decoration:underline; text-underline-offset:3px; cursor:pointer; font:inherit; }
+.media-booking__status { color:#284f7e; font-size:.78rem; line-height:1.6; margin-top:1rem; }.media-booking__status:empty { display:none; }
+.media-booking__trap { position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+@media(max-width:1000px) { .media-booking__layout { gap:3rem; }.media-booking__form { padding:1.8rem; } }
+@media(max-width:760px) { .media-page--simple .media-booking { padding:3.5rem 0; }.media-booking__layout { grid-template-columns:1fr; gap:2rem; }.media-booking__intro h2 { font-size:2.5rem; }.media-booking__meeting { margin-top:1.5rem; }.media-booking__alternative { margin-top:1rem; }.media-booking__form { padding:1.5rem; }.media-booking__steps { gap:1rem; font-size:.65rem; } }
+@media(max-width:380px) { .media-booking__form { padding:1.15rem; }.media-booking__fields { grid-template-columns:1fr; }.media-booking__days { gap:.3rem; } }
+
+.media-booking__form { scroll-margin-top:100px; }
